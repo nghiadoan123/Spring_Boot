@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9384c2f5-9826-4bed-a0d3-fc463691fde6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/build/classes/java/main/repository/impl/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/build/classes/java/main/repository/impl/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/build/libs/user_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/build/libs/user_management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/src/main/java/repository/impl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module_3_new/_12_ JDBC And CRUD_/bai_tap/user_management/src/main/java/repository/impl/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/model/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/java/com/codegym/case_module_four/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/customer/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/employee/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/service/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_module_four/src/main/resources/templates/service/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23NNnr2fVHAweOZNN71ygh5Y78g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9384c2f5-9826-4bed-a0d3-fc463691fde6" name="Default Changelist" comment="" />
+      <created>1641570754411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641570754411</updated>
+      <workItem from="1641570756554" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>

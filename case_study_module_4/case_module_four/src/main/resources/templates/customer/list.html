@@ -1,0 +1,329 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="https://kit.fontawesome.com/0d73d0f6f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
+          integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css"
+          integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <title>Royal Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accomodation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">Selector</a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="/customer">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/employee">Employee</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contract">Contract</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Elemests</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="row">
+    <div th:if="${userInfo != null}" th:utext="${userInfo}"></div>
+</div>
+
+
+<p>
+    <a th:href="@{/customer/create}" style="text-decoration: none" class="btn-info">Add new Customer</a>
+</p>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="row">
+            <form action="#" th:action="@{/customer/search}" method="get">
+                <div class="row">
+                    <div class="col-1">
+                         <span >
+                        <button class="btn btn-outline-success my-2 my-sm-0" id="search">Search</button>
+                    </span>
+                    </div>
+                   <div class="col-2">
+                       <input class="form-control " type="search" placeholder="Search Name" aria-label="Search"
+                              name="name">
+                   </div>
+                  <div class="col-2">
+                      <input class="form-control " type="search" placeholder="Search customer code " aria-label="Search"
+                             name="code">
+                  </div>
+
+                </div>
+              <div class="row">
+
+
+              </div>
+
+<!--                <div class="col-2">-->
+<!--                    <select name="code">-->
+<!--                        <option th:value="K">-->
+<!--                            KH-0001-->
+<!--                        </option>-->
+
+<!--                        <option th:value="K" >-->
+<!--                            KH-0002-->
+<!--                        </option>-->
+<!--                    </select>-->
+<!--                </div>-->
+
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="sort">
+                <a th:href="@{/customer/sort}">Sort</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <table class="table table-striped w-50 mx-auto">
+            <thead class="thead-inverse">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Code Number</th>
+                <th>Birth Day</th>
+                <th>Gender</th>
+                <th>Id Card</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Customer Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="customer,rowstat : ${customerList}">
+                <td th:text="${customer.id}"></td>
+                <td th:text="${customer.name}"></td>
+                <td th:text="${customer.codeNumber}"></td>
+                <td th:text="${customer.birthDay}"></td>
+                <td th:text="${customer.gender}"></td>
+                <td th:text="${customer.idCard}"></td>
+                <td th:text="${customer.phone}"></td>
+                <td th:text="${customer.email}"></td>
+                <td th:text="${customer.address}"></td>
+                <td th:text="${customer.customerType.nameType}"></td>
+                <td>
+                    <button type="button" class="btn btn-light">
+                        <a th:href="@{/customer/edit_param/(id = ${customer.id})}">Edit</a>
+                    </button>
+
+                </td>
+                <td>
+                    <button type="button" class="btn btn-danger btn-delete" data-toggle="modal"
+                            data-target="#deleteModal" th:data-id123="${customer.id}" th:data-name="${customer.name}">
+                        Delete
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-light btn-view" data-toggle="modal"
+                            data-target="#viewModal"
+                            th:data-id123="${customer.id}"
+                            th:data-name="${customer.name}"
+                            th:data-codenumber="${customer.codeNumber}"
+                            th:data-birthday="${customer.birthDay}"
+                            th:data-gender="${customer.gender}"
+                            th:data-idcard="${customer.idCard}"
+                            th:data-phone="${customer.phone}"
+                            th:data-email="${customer.email}"
+                            th:data-address="${customer.address}"
+                            th:data-customertype="${customer.customerType.nameType}">View
+                    </button>
+
+                </td>
+
+            </tr>
+
+            </tbody>
+
+        </table>
+
+        <!-- Modal delete-->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Bạn có muốn xoá khách hàng <span id="name-delete" class="text-danger"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a id="link-delete" class="btn btn-danger" href="">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal view-->
+        <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>khách hàng: <span id="name-view" class="text-danger"></span></p>
+
+                        <p>Id: <span id="id-view" class="text-danger"></span></p>
+                        <p>Name: <span id="name-view-table" class="text-danger"></span></p>
+                        <p>Code Number<span id="code-view" class="text-danger"></span></p>
+                        <p>Id Card<span id="id-card-view" class="text-danger"></span></p>
+                        <p>Birth Day<span id="birthDay-view" class="text-danger"></span></p>
+                        <p>Gender <span id="gender-view" class="text-danger"></span></p>
+                        <p>Phone <span id="phone-view" class="text-danger"></span></p>
+                        <p>Email<span id="email-view" class="text-danger"></span></p>
+                        <p>Address<span id="address-view" class="text-danger"></span></p>
+                        <p>Customer Type<span id="customerType-view" class="text-danger"></span></p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a id="link-view" href="" style="text-decoration: none"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <span>
+    <a th:if="${customerList.hasPrevious()}" th:href="@{/customer/(page = ${customerList.number - 1})}">
+        Previous
+    </a>
+     <span>
+        <span th:each="pageNo: ${#numbers.sequence(0,customerList.totalPages - 1)}">
+            <a th:href="@{/customer/(page = ${pageNo})}" th:text="${pageNo}"></a>
+        </span>
+    </span>
+     <a th:if="${customerList.hasNext()}" th:href="@{/customer/(page = ${customerList.number + 1})}">
+        Next
+    </a>
+
+        </span>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 bg-black">
+                <br>
+                <p class="text-light fs-6">Features and app availability may vary by region.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".btn-delete").click(function () {
+            let id = this.dataset.id123;
+            let name = this.dataset.name;
+            $('#name-delete').html(name);
+            $('#link-delete').attr("href", "http://localhost:8080/customer/delete?id=" + id);
+
+        });
+
+
+        $(".btn-view").click(function () {
+            let id = this.dataset.id123;
+            $('#id-view').html(id);
+
+            let name = this.dataset.name;
+            $('#name-view').html(name);
+
+            let nameTable = this.dataset.name;
+            $('#name-view-table').html(nameTable);
+
+            let codeNumber = this.dataset.codenumber;
+            $('#code-view').html(codeNumber);
+
+            let birthDay = this.dataset.birthday;
+            $('#birthDay-view').html(birthDay);
+
+            let gender = this.dataset.gender;
+            $('#gender-view').html(gender);
+
+            let phone = this.dataset.phone;
+            $('#phone-view').html(phone);
+
+            let email = this.dataset.email;
+            $('#email-view').html(email);
+
+            let address = this.dataset.address;
+            $('#address-view').html(address);
+
+            let idCard = this.dataset.idcard;
+            $('#id-card-view').html(idCard);
+
+            let customerType = this.dataset.customertype;
+            $('#customerType-view').html(customerType);
+
+            $('#link-view').attr("href", "http://localhost:8080/customer/view?id=" + id);
+
+        });
+
+    });
+</script>
+
+</body>
+</html>
